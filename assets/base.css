@@ -1,3 +1,27 @@
+/*=================================================================================
+ Custom Fonts
+=================================================================================*/
+/* If relative paths do not work, replace them with CDN URLs */
+ @font-face {
+  font-family: 'bemboitalic';
+  src: url('./bembo-italicosf-webfont.woff2') format('woff2'),
+       url('./bembo-italicosf-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'streetsoflondon';
+  src: url('./streetsoflondon-regular-webfont.woff2') format('woff2'),
+       url('./streetsoflondon-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/*=================================================================================
+END - Custom Fonts
+=================================================================================*/
+
 * {
   box-sizing: border-box;
 }
@@ -19,6 +43,10 @@ body {
   --hover-shadow-color: var(--color-shadow);
   --hover-transition-duration: 0.25s;
   --hover-transition-timing: ease-out;
+
+  /* Custom Fonts variables */
+  --font-family-base: "bemboitalic", serif;
+  --font-family-heading: "streetsoflondon", sans-serif;
 }
 
 html {
